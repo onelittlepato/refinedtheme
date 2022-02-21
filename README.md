@@ -1,6 +1,6 @@
-# 🎨 Cider Theme Template
-
-This repository is a theme template for Cider
+# REFINED
 
 
-![image](https://user-images.githubusercontent.com/49113086/153828900-3bbc2a41-349b-4bc9-bc61-813a4a0ee2f2.png)
+
+
+![image](https://user-images.githubusercontent.com/98642867/154934886-7d00d0f0-399d-4282-91ba-5792d75d8e6b.png)
