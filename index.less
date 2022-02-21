@@ -1,0 +1,243 @@
+// Theme
+:-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 6px solid transparent;
+    box-shadow: inset 0px 0px 10px 10px rgb(200 200 200 / 50%);
+    border-radius: 16px;
+    min-height: 64px;
+    transition: border 1s;
+}
+
+.app-navigation {
+    background: #000000b8;
+    height: calc(100% - var(--chromeHeight));
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#app-sidebar {
+    height: 100%;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.app-sidebar-header-text {
+    color: #dc3545;
+    font-size: 13px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    /* border-bottom: 1px solid #323232; */
+    margin-top: 20px;
+    font-weight: 600;
+    opacity: 100;
+}
+
+.app-sidebar-item {
+    display: flex;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    t-weight: 400;
+    font-family: inherit;
+    font-size: 14px;
+    margin-bottom: 6px 0px;
+    border-radius: 6px;
+    background: transparent;
+    color: #eee;
+    transition: transform 0.1s;
+    text-align: left;
+}
+
+.app-sidebar-content {
+    padding: 8px 8px 0px 13px;
+    overflow-y: scroll;
+    overflow-y: overlay;
+    height: 100%;
+}
+
+
+.cd-mediaitem-list-item .isLibrary {
+    flex: 0 0 auto;
+    width: 40px;
+    margin-right: 10px;    
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+}
+
+.playlist-page .playlist-display .playlistInfo .playlist-info .playlist-artist {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #dc3545;
+    margin-right: 6px;
+    flex-shrink: unset;
+}
+
+.md-btn.md-btn-primary {
+    background: #7777770d;
+    font-weight: 600;
+    color: #dc3545;
+   border: 1px solid #cccccc29;
+}
+
+.md-btn.md-btn-icon {
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    background: #070707;
+    color: #dc3545;
+}
+
+#app-content {
+    background: #000000;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    border-radius: 10px 0px 0px 0px;
+    position: relative;
+}
+
+#navigation-bar {
+    width: 100%;
+    background-color: #7777770d;
+    height: var(--navigationBarHeight);
+    display: flex;
+    align-items: center;
+    padding: 0px 6px;
+    z-index: 7;
+    position: sticky;
+}
+
+.content-inner {
+    position: absolute;
+    top: var(--navigationBarHeight);
+    left: 0;
+    width: 100%;
+    transition: zoom 1s;
+    zoom: 1;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.well {
+    max-width: 100%;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.albums-square-container {
+    margin: auto;
+    max-width: fit-content;
+    align-content: center;
+}
+
+
+.bg-artwork--placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    z-index: -1;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.app-chrome {
+    width: 100%;
+    height: var(--chromeHeight);
+    display: flex;
+    flex-direction: row;
+    -webkit-app-region: drag;
+}
+
+.cd-mediaitem-list-item {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    font-size: 14px;
+    border-bottom: 1px solid #cccccc29;
+    align-items: center;
+}
+
+.home-page .well.artistfeed-well {
+    margin-top: 0px;
+    height: 392px;
+    align-content: flex-start;
+}
+
+.cd-mediaitem-square {
+    width: 200px;
+    height: 238px;
+    flex: 0 0 auto;
+    margin: 15px;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.albums-square-container {
+    margin: auto;
+    align-content: flex-start;
+    align-content: center;
+}
+
+.playlist-page .playlist-display .playlistInfo {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.playlist-page .playlist-body {
+    padding: var(--contentInnerPadding) 2em;    
+    margin-top: -90px;
+}
+
+.playlist-page .playlist-display {
+    padding: var(--contentInnerPadding);
+    min-height: 300px;
+    position: relative;
+}
+
+.playlist-time {
+    font-size: 0.3em;
+    opacity: 0.7;
+}
+
+.playlist-page .playlist-time {
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+.playlist-time.showExtended.item-navigate {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hr  {
+    display: none;
+}
